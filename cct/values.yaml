@@ -1,0 +1,39 @@
+namespace: cct
+container_registry: ghcr.io/b-v-analytics
+image_pull_secret:
+  name: regcred
+  enabled: true
+  create_sealed_secret: false
+  encrypted_value: ""
+
+ingress:
+  name: cct-ingress
+  host: ""
+
+frontend:
+  name: cct-frontend
+  replicas: 1
+  image_version: latest
+  image_name: cct-frontend
+  container_port: 80
+
+backend:
+  name: cct-backend
+  replicas: 1
+  spring_profile: default
+  image_name: cct-backend
+  image_version: latest
+  container_port: 8080
+
+database:
+  db_name: cct_db
+  image_tag: 17-alpine
+
+  cluster_name: cct-cnpg-cluster
+  instances: 1
+
+  storage:
+    size: 1Gi
+
+  service:
+    name: cct-cnpg-cluster-rw

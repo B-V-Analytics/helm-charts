@@ -1,0 +1,10 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: {{ .Values.database.cluster_name }}
+  namespace: {{ .Values.namespace }}
+spec:
+  instances: {{ .Values.database.instances }}
+  imageName: "ghcr.io/cloudnative-pg/postgresql:{{.Values.database.image_tag}}"
+  storage:
+    size: {{ .Values.database.storage.size }}

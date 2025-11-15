@@ -1,0 +1,43 @@
+# k8s/manifests/deployment.yaml
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.backend.name }}
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: {{ .Values.backend.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.backend.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.backend.name }}
+    spec:
+      containers:
+        - name: {{ .Values.backend.name }}-container
+          image: '{{ .Values.container_registry }}/{{ .Values.backend.image_name }}:{{ .Values.backend.image_version }}'
+          args: ["--spring.profiles.active={{ .Values.backend.spring_profile }}"]
+          ports:
+            - containerPort: {{ .Values.backend.container_port }}
+          env:
+            - name: "spring.datasource.url"
+              valueFrom:
+                secretKeyRef:
+                  key: jdbc-uri # this secret is created by the cnpg operator and already includes authentication
+                  name: "{{ .Values.database.cluster_name }}-app"
+      initContainers:
+        - name: wait-for-db
+          image: busybox:1.36.1
+          command: ['sh', '-c', 'until nc -z {{ .Values.database.service.name }}.{{ .Values.namespace }} $PGPORT; do echo waiting for database $(date); sleep 2; done; echo database ready $(date);']
+          env:
+            - name: "PGPORT"
+              valueFrom:
+                secretKeyRef:
+                  key: port
+                  name: "{{ .Values.database.cluster_name }}-app"
+      {{- if .Values.image_pull_secret.enabled }}
+      imagePullSecrets:
+        - name: {{ .Values.image_pull_secret.name }}
+      {{- end }}
