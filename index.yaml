@@ -3,6 +3,29 @@ entries:
   cct:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2025-11-15T21:55:41.139503363Z"
+    description: A Helm chart to deploy frontend, backend and database of the crypto
+      crime tracker.
+    digest: 8c4c28f1ecb3e0031ad34de50f5e9f22f4b7ee7b5f439b60c210efa7ddce95e9
+    home: https://github.com/B-V-Analytics/cct-infra
+    keywords:
+    - web-application
+    - frontend
+    - backend
+    - database
+    - cct
+    maintainers:
+    - name: NilsB98
+    name: cct
+    sources:
+    - https://github.com/B-V-Analytics/cct-frontend
+    - https://github.com/B-V-Analytics/cct-backend
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-0.0.3/cct-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2025-11-15T21:21:26.725928678Z"
     description: A Helm chart to deploy frontend, backend and database of the crypto
       crime tracker.
@@ -24,4 +47,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-0.0.2/cct-0.0.2.tgz
     version: 0.0.2
-generated: "2025-11-15T21:21:26.72593832Z"
+generated: "2025-11-15T21:55:41.139511669Z"
