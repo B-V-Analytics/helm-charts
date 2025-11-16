@@ -4,7 +4,7 @@ description: A Helm chart to deploy frontend, backend and database of the crypto
 
 type: application
 
-version: 0.0.3
+version: 0.0.4
 
 # The version of the application that this chart deploys.
 appVersion: "0.0.1"
