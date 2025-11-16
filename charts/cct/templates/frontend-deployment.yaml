@@ -19,7 +19,7 @@ spec:
         - name: {{ .Values.frontend.name }}-container
           image: '{{ .Values.container_registry }}/{{ .Values.frontend.image_name }}:{{ .Values.frontend.image_version }}'
           ports:
-            - containerPort:{{ .Values.frontend.container_port }}
+            - containerPort: {{ .Values.frontend.container_port }}
       {{- if .Values.image_pull_secret.enabled }}
       imagePullSecrets:
         - name: {{ .Values.image_pull_secret.name }}
