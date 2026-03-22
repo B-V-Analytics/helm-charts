@@ -162,4 +162,77 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-0.0.2/cct-0.0.2.tgz
     version: 0.0.2
-generated: "2026-02-13T21:04:19.963218232Z"
+  cct-backend:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2026-03-22T22:11:07.559828281Z"
+    description: Backend deployment for the Crypto Crime Tracker.
+    digest: f11149875a122f70e6aa6b0a0b1bee48eac0d19c9bb2e9229d66a8f4493eb839
+    home: https://github.com/B-V-Analytics/cct-infra
+    keywords:
+    - web-application
+    - backend
+    - cct
+    maintainers:
+    - name: NilsB98
+    name: cct-backend
+    sources:
+    - https://github.com/B-V-Analytics/cct-backend
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-backend-0.1.0/cct-backend-0.1.0.tgz
+    version: 0.1.0
+  cct-frontend:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2026-03-22T22:11:07.756338002Z"
+    description: Frontend deployment for the Crypto Crime Tracker.
+    digest: 8535734a2e2e5b68138742098b53728087d654521b9d828e6b98d94ec05aa822
+    home: https://github.com/B-V-Analytics/cct-infra
+    keywords:
+    - web-application
+    - frontend
+    - cct
+    maintainers:
+    - name: NilsB98
+    name: cct-frontend
+    sources:
+    - https://github.com/B-V-Analytics/cct-frontend
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-frontend-0.1.0/cct-frontend-0.1.0.tgz
+    version: 0.1.0
+  cct-umbrella:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2026-03-22T22:11:07.989494564Z"
+    dependencies:
+    - name: cct-frontend
+      repository: file://../cct-frontend
+      version: 0.1.0
+    - name: cct-backend
+      repository: file://../cct-backend
+      version: 0.1.0
+    - condition: keycloakx.enabled
+      name: keycloakx
+      repository: https://codecentric.github.io/helm-charts
+      version: 7.1.9
+    description: Umbrella chart for the Crypto Crime Tracker — bundles frontend, backend,
+      and Keycloak.
+    digest: 2e38b5a33a58b99e242c831182aca4eb7460cde59c946111daab698bd61d43fa
+    home: https://github.com/B-V-Analytics/cct-infra
+    keywords:
+    - web-application
+    - umbrella
+    - cct
+    maintainers:
+    - name: NilsB98
+    name: cct-umbrella
+    sources:
+    - https://github.com/B-V-Analytics/cct-frontend
+    - https://github.com/B-V-Analytics/cct-backend
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-umbrella-0.1.0/cct-umbrella-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-03-22T22:11:07.989516673Z"
