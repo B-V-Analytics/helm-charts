@@ -286,4 +286,15 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-umbrella-0.1.0/cct-umbrella-0.1.0.tgz
     version: 0.1.0
-generated: "2026-03-22T22:49:09.247190324Z"
+  sprintcast:
+  - apiVersion: v2
+    appVersion: 0.9.0
+    created: "2026-04-03T12:19:45.812394909Z"
+    description: Planning Poker for agile team estimation
+    digest: 2696aa496957bbb8e07ffa9452a718bf4c9f6749401647424d8f2ddebaf49702
+    name: sprintcast
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
+    version: 0.6.0
+generated: "2026-04-03T12:19:45.812423432Z"
