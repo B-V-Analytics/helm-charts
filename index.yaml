@@ -288,6 +288,16 @@ entries:
     version: 0.1.0
   sprintcast:
   - apiVersion: v2
+    appVersion: 0.13.0
+    created: "2026-04-03T12:53:41.63777204Z"
+    description: Planning Poker for agile team estimation
+    digest: 385a6baf67a929a1879c65b01413e1d17a84a148cfaa6720c9e02a2e4e41e5e3
+    name: sprintcast
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.10.0/sprintcast-0.10.0.tgz
+    version: 0.10.0
+  - apiVersion: v2
     appVersion: 0.12.0
     created: "2026-04-03T12:50:29.286666678Z"
     description: Planning Poker for agile team estimation
@@ -317,4 +327,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
     version: 0.6.0
-generated: "2026-04-03T12:50:29.286959266Z"
+generated: "2026-04-03T12:53:41.637822916Z"
