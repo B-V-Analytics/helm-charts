@@ -204,6 +204,25 @@ entries:
   cct-frontend:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2026-09-16T16:17:18.761278454Z"
+    description: Frontend deployment for the Crypto Crime Tracker.
+    digest: 2448770256b2202f8c9ce644bbdaa6dee707d172695ad19b8430fd762c473b31
+    home: https://github.com/B-V-Analytics/cct-infra
+    keywords:
+    - web-application
+    - frontend
+    - cct
+    maintainers:
+    - name: NilsB98
+    name: cct-frontend
+    sources:
+    - https://github.com/B-V-Analytics/cct-frontend
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-frontend-0.4.0/cct-frontend-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2026-09-06T12:38:39.685855951Z"
     description: Frontend deployment for the Crypto Crime Tracker.
     digest: ad7c050ba1b355c40c8e7671914fe71b949f8013c422855cf76e3c6d1ecdc794
@@ -298,6 +317,38 @@ entries:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-frontend-0.1.0/cct-frontend-0.1.0.tgz
     version: 0.1.0
   cct-umbrella:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2026-09-16T16:17:19.050101765Z"
+    dependencies:
+    - name: cct-frontend
+      repository: file://../cct-frontend
+      version: '>=0.2.0'
+    - name: cct-backend
+      repository: file://../cct-backend
+      version: '>=0.2.0'
+    - condition: keycloakx.enabled
+      name: keycloakx
+      repository: https://codecentric.github.io/helm-charts
+      version: 7.1.9
+    description: Umbrella chart for the Crypto Crime Tracker — bundles frontend, backend,
+      and Keycloak.
+    digest: 534a0a18c77aa00721e279db0b8ce4e8899f09d0dc06af124efe5ec5b187d85b
+    home: https://github.com/B-V-Analytics/cct-infra
+    keywords:
+    - web-application
+    - umbrella
+    - cct
+    maintainers:
+    - name: NilsB98
+    name: cct-umbrella
+    sources:
+    - https://github.com/B-V-Analytics/cct-frontend
+    - https://github.com/B-V-Analytics/cct-backend
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-umbrella-0.2.10/cct-umbrella-0.2.10.tgz
+    version: 0.2.10
   - apiVersion: v2
     appVersion: 0.0.1
     created: "2026-09-06T12:38:39.830681619Z"
@@ -773,4 +824,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
     version: 0.6.0
-generated: "2026-09-06T12:38:39.830756571Z"
+generated: "2026-09-16T16:17:19.050176055Z"
