@@ -414,6 +414,38 @@ entries:
   cct-umbrella:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2026-10-11T13:17:25.391723986Z"
+    dependencies:
+    - name: cct-frontend
+      repository: file://../cct-frontend
+      version: '>=0.2.0'
+    - name: cct-backend
+      repository: file://../cct-backend
+      version: '>=0.2.0'
+    - condition: keycloakx.enabled
+      name: keycloakx
+      repository: https://codecentric.github.io/helm-charts
+      version: 7.3.2
+    description: Umbrella chart for the Crypto Crime Tracker — bundles frontend, backend,
+      and Keycloak.
+    digest: 3033a7d0a59f0df1289f77b2e80b80f12f505c883559e76f793208c92d9bda6d
+    home: https://github.com/B-V-Analytics/cct-infra
+    keywords:
+    - web-application
+    - umbrella
+    - cct
+    maintainers:
+    - name: NilsB98
+    name: cct-umbrella
+    sources:
+    - https://github.com/B-V-Analytics/cct-frontend
+    - https://github.com/B-V-Analytics/cct-backend
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-umbrella-0.2.22/cct-umbrella-0.2.22.tgz
+    version: 0.2.22
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2026-10-11T12:43:57.740927286Z"
     dependencies:
     - name: cct-frontend
@@ -1271,4 +1303,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
     version: 0.6.0
-generated: "2026-10-11T12:43:57.741240843Z"
+generated: "2026-10-11T13:17:25.391864298Z"
