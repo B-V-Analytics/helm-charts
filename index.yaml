@@ -1474,6 +1474,84 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-umbrella-0.1.0/cct-umbrella-0.1.0.tgz
     version: 0.1.0
+  platform-app:
+  - apiVersion: v2
+    created: "2026-10-25T15:09:30.468378065Z"
+    description: Generic chart for simple platform apps (Deployment, Service, HTTPRoute,
+      bindings wired in).
+    digest: f3c5994750e8f256d54dac15651521168e78116a6a76bdb4623b0c8d4082214c
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-app
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-app-0.1.0/platform-app-0.1.0.tgz
+    version: 0.1.0
+  platform-keycloak:
+  - apiVersion: v2
+    created: "2026-10-25T15:09:30.632990693Z"
+    dependencies:
+    - name: keycloakx
+      repository: https://codecentric.github.io/helm-charts
+      version: 7.4.0
+    description: Platform-managed Keycloak for one tenant (codecentric keycloakx +
+      route, credentials, bindings).
+    digest: fe835688fe200d3480aeca74ed0a9158e59ab3d8da956f92891eb89f075ae9e2
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-keycloak
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-keycloak-0.1.0/platform-keycloak-0.1.0.tgz
+    version: 0.1.0
+  platform-postgres:
+  - apiVersion: v2
+    created: "2026-10-25T15:09:30.775941042Z"
+    description: Platform-managed PostgreSQL for one tenant (CNPG Cluster, databases,
+      credentials, backups).
+    digest: 6e77e7f0decc838a590fc14e9bd14d3a050239f688934d5ac01f302589618562
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-postgres
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-postgres-0.1.0/platform-postgres-0.1.0.tgz
+    version: 0.1.0
+  platform-tenant-base:
+  - apiVersion: v2
+    created: "2026-10-25T15:09:30.923753794Z"
+    description: Per-tenant platform base (namespace, AppProject, quotas, app secrets,
+      platform ConfigMap).
+    digest: 292f760311b75e721c7754dc01e0d7bae6ac819751761b589b922a1fbc2709d0
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-tenant-base
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-tenant-base-0.1.0/platform-tenant-base-0.1.0.tgz
+    version: 0.1.0
+  platform-valkey:
+  - apiVersion: v2
+    created: "2026-10-25T15:09:31.080934329Z"
+    dependencies:
+    - name: valkey
+      repository: https://valkey.io/valkey-helm/
+      version: 0.12.0
+    description: Platform-managed Valkey for one tenant (valkey-io chart + generated
+      password and binding).
+    digest: a5c4569af6329fb7861a2a0559dd6aef7f79d876134aac66b3bc0481eb96f3f3
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-valkey
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-valkey-0.1.0/platform-valkey-0.1.0.tgz
+    version: 0.1.0
   sprintcast:
   - apiVersion: v2
     appVersion: 0.14.2
@@ -1565,4 +1643,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
     version: 0.6.0
-generated: "2026-10-20T12:23:17.593466189Z"
+generated: "2026-10-25T15:09:31.081224424Z"
