@@ -1508,6 +1508,19 @@ entries:
     version: 0.1.0
   platform-postgres:
   - apiVersion: v2
+    created: "2026-10-26T15:58:46.430723926Z"
+    description: Platform-managed PostgreSQL for one tenant (CNPG Cluster, databases,
+      credentials, backups).
+    digest: 6e040b64a4ce3389d005b4564e817abebb92a0560c18994e0d06be85151c5b32
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-postgres
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-postgres-0.2.0/platform-postgres-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     created: "2026-10-25T15:57:33.167322352Z"
     description: Platform-managed PostgreSQL for one tenant (CNPG Cluster, databases,
       credentials, backups).
@@ -1669,4 +1682,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
     version: 0.6.0
-generated: "2026-10-26T14:21:44.369622928Z"
+generated: "2026-10-26T15:58:46.431148383Z"
