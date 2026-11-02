@@ -1474,7 +1474,34 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/cct-umbrella-0.1.0/cct-umbrella-0.1.0.tgz
     version: 0.1.0
+  platform-access:
+  - apiVersion: v2
+    created: "2026-11-02T12:27:10.770136062Z"
+    description: Gateway access policy for one tenant component (countries, IP allowlist,
+      basic auth on Envoy Gateway).
+    digest: 743a9bf9fe829167146d3d1b08e8f3235f58de172c4c651b68e326dbfbce305b
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-access
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-access-0.1.0/platform-access-0.1.0.tgz
+    version: 0.1.0
   platform-app:
+  - apiVersion: v2
+    created: "2026-11-02T12:27:11.109396272Z"
+    description: Generic chart for simple platform apps (Deployment, Service, HTTPRoute,
+      bindings wired in).
+    digest: 42ad37e5e57d0f0108eb51d47fa96b428d53c63a042ab3c89eb818cae77d92ea
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-app
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-app-0.2.0/platform-app-0.2.0.tgz
+    version: 0.2.0
   - apiVersion: v2
     created: "2026-10-25T15:09:30.468378065Z"
     description: Generic chart for simple platform apps (Deployment, Service, HTTPRoute,
@@ -1712,4 +1739,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
     version: 0.6.0
-generated: "2026-10-29T13:18:15.580154499Z"
+generated: "2026-11-02T12:27:11.109590143Z"
