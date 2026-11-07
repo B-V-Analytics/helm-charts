@@ -1517,6 +1517,23 @@ entries:
     version: 0.1.0
   platform-keycloak:
   - apiVersion: v2
+    created: "2026-11-07T14:12:19.9151562Z"
+    dependencies:
+    - name: keycloakx
+      repository: https://codecentric.github.io/helm-charts
+      version: 7.4.0
+    description: Platform-managed Keycloak for one tenant (codecentric keycloakx +
+      route, credentials, bindings).
+    digest: 13406f5fa6552d3e74f25787d7f2b0ff88df5ce88710f3a0be53b2337347b09d
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-keycloak
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-keycloak-0.1.2/platform-keycloak-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     created: "2026-11-07T13:29:56.900919233Z"
     dependencies:
     - name: keycloakx
@@ -1795,4 +1812,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
     version: 0.6.0
-generated: "2026-11-07T13:29:56.901143752Z"
+generated: "2026-11-07T14:12:19.915226406Z"
