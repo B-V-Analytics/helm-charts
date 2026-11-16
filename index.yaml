@@ -1718,6 +1718,23 @@ entries:
     version: 0.1.0
   platform-valkey:
   - apiVersion: v2
+    created: "2026-11-16T12:33:57.241511521Z"
+    dependencies:
+    - name: valkey
+      repository: https://valkey.io/valkey-helm/
+      version: 1.0.0
+    description: Platform-managed Valkey for one tenant (valkey-io chart + generated
+      password and binding).
+    digest: ab7a4d9de9adbc43493824680b212fbd7f227337e69d67c0535125df39e9c8a3
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-valkey
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-valkey-0.1.2/platform-valkey-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     created: "2026-10-29T13:18:15.580094499Z"
     dependencies:
     - name: valkey
@@ -1842,4 +1859,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
     version: 0.6.0
-generated: "2026-11-13T16:58:00.086320887Z"
+generated: "2026-11-16T12:33:57.24170175Z"
