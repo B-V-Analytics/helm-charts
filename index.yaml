@@ -1652,6 +1652,19 @@ entries:
     version: 0.1.0
   platform-tenant-base:
   - apiVersion: v2
+    created: "2026-11-16T14:38:53.930847547Z"
+    description: Per-tenant platform base (namespace, AppProject, quotas, app secrets,
+      platform ConfigMap).
+    digest: 7f59d7a4af71a0ec0c4be53b2437d4d25aabaa6a61beed55fdaf004dacf06a23
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-tenant-base
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-tenant-base-0.4.0/platform-tenant-base-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
     created: "2026-11-09T08:27:55.699278023Z"
     description: Per-tenant platform base (namespace, AppProject, quotas, app secrets,
       platform ConfigMap).
@@ -1859,4 +1872,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
     version: 0.6.0
-generated: "2026-11-16T12:33:57.24170175Z"
+generated: "2026-11-16T14:38:53.931167876Z"
