@@ -1490,6 +1490,19 @@ entries:
     version: 0.1.0
   platform-app:
   - apiVersion: v2
+    created: "2026-11-16T15:56:38.171175571Z"
+    description: Generic chart for simple platform apps (Deployment, Service, HTTPRoute,
+      bindings wired in).
+    digest: 235a5f9d40658dbabe9f5774f590dc401d632c93a6ceed3d2d2213adbec026bf
+    home: https://github.com/B-V-Analytics/cct-infra
+    maintainers:
+    - name: NilsB98
+    name: platform-app
+    type: application
+    urls:
+    - https://github.com/B-V-Analytics/helm-charts/releases/download/platform-app-0.3.0/platform-app-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     created: "2026-11-02T12:27:11.109396272Z"
     description: Generic chart for simple platform apps (Deployment, Service, HTTPRoute,
       bindings wired in).
@@ -1872,4 +1885,4 @@ entries:
     urls:
     - https://github.com/B-V-Analytics/helm-charts/releases/download/sprintcast-0.6.0/sprintcast-0.6.0.tgz
     version: 0.6.0
-generated: "2026-11-16T14:38:53.931167876Z"
+generated: "2026-11-16T15:56:38.171445105Z"
